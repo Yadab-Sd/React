@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>React</title>
+</head>
+<body>
+  
+  <div id="root">
+
+  </div>
+
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <script src="main.js" ></script>
+  <script type="text/babel">
+  
+  class Test extends React.Component {
+    render() {
+      return <h1>Hello World!</h1>;
+    }
+  }
+
+  // or use - 
+  /* 
+    function Test(){
+      return (
+        <h1>Hellow ! I'm from functional</h1>
+      )
+    }
+  */
+  ReactDOM.render(<Test />, document.getElementById('root'));
+
+  </script>
+</body>
+</html>
