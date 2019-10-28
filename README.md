@@ -9,18 +9,18 @@ Components :
       Ex: 
       function MyFirstCom() {    
             //functions, variables goes here
-            return (      <h1 className="firstText" >I am the child!</h1>    );  
+            return (      <tag className="firstText" >I am the child!</tag>    );  
           }
   ii) Class - write components as JavaScript classes. These are called class components. // useful for component state
       Ex: 
       class MyFirstCom extends React.Component {  
              render() {                                       // render function is mendatory for Returing JSX for rendering
                 //functions, variables goes here
-                return (      <h1 className="firstText" >I am the child!</h1>    );  
+                return (      <tag className="firstText" >I am the child!</tag>    );  
              }
           }
 
-** Here  <h1>I am the child!</h1> is JSX
+** Here  <tag>I am the child!</tag> is JSX
 
 * Class or functional components are rendered by - 
       ReactDOM.render(<MyFirstCom />, document.getElementById('Id'))
